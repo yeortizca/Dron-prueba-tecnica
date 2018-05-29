@@ -12,7 +12,6 @@ class Posicion():
         txt = open('direcciones.txt')
         for camino in txt.readlines():
             camino = camino.split(',')
-            print(camino)
             aux = ListaCircularDobleEnlazada.primero
             posicion_final = Posicion()
           
