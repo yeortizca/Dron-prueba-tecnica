@@ -39,6 +39,15 @@ class Posicion():
         posicion_final = open('posiciones.txt','w')
         for pos in posiciones:
             print("(" + str(pos.getX()) + "," + str(pos.getY()) + "," + pos.getDireccion() + ")")
+            posicion_final.write('(')
+            posicion_final.write(str(pos.getX()))
+            posicion_final.write(str(','))
+            posicion_final.write(str(pos.getY()))
+            posicion_final.write(',')
+            posicion_final.write(str(pos.getDireccion()))
+            posicion_final.write(')')
+            posicion_final.write('\n')
+           
 
 
                        
