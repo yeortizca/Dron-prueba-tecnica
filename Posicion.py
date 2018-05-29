@@ -32,7 +32,6 @@ class Posicion():
                     aux = aux.anterior
                     posicion_final.setDireccion(aux.getClave())
             posiciones.append(posicion_final)
-            print(len(posiciones))
         txt.close()
 
     @staticmethod
